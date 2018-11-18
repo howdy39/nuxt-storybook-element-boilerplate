@@ -7,6 +7,13 @@ import { linkTo } from '@storybook/addon-links'
 import MyButton from './MyButton'
 import Welcome from './Welcome'
 
+import Buttons from '~/components/Buttons'
+
+storiesOf('Buttons', module).add('Buttons', () => ({
+  components: { Buttons },
+  template: '<Buttons />'
+}))
+
 storiesOf('Welcome', module).add('to Storybook', () => ({
   components: { Welcome },
   template: '<welcome :showApp="action" />',
@@ -32,5 +39,4 @@ storiesOf('Button', module)
     template: '<my-button @click="action">😀 😎 👍 💯</my-button>',
     methods: { action: action('clicked') }
   }))
-
 /* eslint-enable react/react-in-jsx-scope */
