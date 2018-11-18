@@ -18,22 +18,24 @@
           target="_blank"
           class="button--grey">GitHub</a>
       </div>
+      <Buttons />
     </div>
   </section>
 </template>
 
 <script>
 import Logo from '~/components/Logo.vue'
+import Buttons from '~/components/Buttons.vue'
 
 export default {
   components: {
-    Logo
+    Logo,
+    Buttons
   }
 }
 </script>
 
 <style>
-
 .container {
   min-height: 100vh;
   display: flex;
