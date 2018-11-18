@@ -1,3 +1,4 @@
+import '!style-loader!css-loader!element-ui/lib/theme-chalk/index.css';
 import ElementUI from '~/plugins/element-ui';
 ElementUI();
 
