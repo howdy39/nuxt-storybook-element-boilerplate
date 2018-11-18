@@ -1,3 +1,6 @@
+import ElementUI from '~/plugins/element-ui';
+ElementUI();
+
 import { configure } from '@storybook/vue';
 
 // automatically import all files ending in *.stories.js
